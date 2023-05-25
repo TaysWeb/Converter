@@ -8,7 +8,33 @@
     <title>Converter</title>
 </head>
 <body>
-    
+      <div class="container">
+        <div class="display">
+         <h3>Temperature Converter</h3>
+        </div>
+     
+        <div class="row">
+           <label>Degrees</label>
+           <input type="number" id="deg" >
+
+           <label>Type</label>
+           <select id="selectTemp">
+            <option value="1">Fahrenheit</option>
+            <option value="2">Celsius</option>
+           </select>
+        </div>
+        <div class="row">
+            <label>Results</label>
+           <label id="results"></label>
+         </div>
+
+        <div class="row">
+            <button id="convert" onclick="TempConvert()">Convert </button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+
+
+      </div>
 
     <script src="./assets/index.js"></script>
 </body>
